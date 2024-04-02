@@ -1,0 +1,36 @@
+
+.main-home-left{
+ padding: 10%;
+ width: 500px;
+ gap: 20px;
+
+}
+.main-home-left h1{
+    font-size:4rem ;
+    font-weight: 800;
+}
+.main-home-left p{
+    margin-block:20px;
+    color: rgb(144, 148, 148);
+}
+.donate-contact button{
+    padding-inline: 2.5rem;
+    padding-block:1.2rem;
+    background-color:#33df9a;
+    color: white;
+    border: 0;
+
+}
+.donate-contact{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.donate-contact-no {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.donate-contact-no i{
+    color:#19dd8e;
+}
