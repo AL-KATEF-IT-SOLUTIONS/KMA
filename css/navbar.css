@@ -52,6 +52,7 @@ nav{
         color: white;
         overflow: hidden;
         transition: all 0.5s;
+        z-index: 155;
     }
     .menu-button {
         display: block;
@@ -63,6 +64,21 @@ nav{
     .menu-home-li{
         margin-block-start: 20px;
     }
+ 
+}
+@media screen and (max-width:786px) {
+    .logo-heading h1{
+        font-size: 2rem;
+    }    
+    .menu-button {
+        font-size: 1.5rem;
 
-    
+    }
+    nav{
+        padding-block: 1rem;
+
+    }
+    #menu-list{
+        top:4.5rem;
+    }
 }
