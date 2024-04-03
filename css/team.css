@@ -22,6 +22,7 @@ main section:nth-child(6) {
 }
 .all-team-card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-block: 50px;
@@ -117,11 +118,14 @@ main section:nth-child(6) {
     
     .aim-box{
         display: flex;
-        height: 200px;
+        height: auto;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
         align-items: center;
-        width: 50%;
+        width: 65%;
         padding-inline: 50px;
+        padding-block: 40px;
         background-repeat: no-repeat;
         background-size:cover ;
         background-attachment: fixed;
@@ -137,5 +141,23 @@ main section:nth-child(6) {
         padding-inline: 50px;
         padding-block:20px ;
         border: 0;
+    }
+    @media screen and (max-width:768px) {
+        main section:nth-child(6) {
+            padding-block: 50px;
+             padding:0px;
+
+          }
+        .team-section h3{
+            font-size: var(--section-heading2);
+        }
+        .team-card{
+            width:85%;
+
+        }
+
+        .aim-section{
+            margin-block: 50px;
+            }
     }
 

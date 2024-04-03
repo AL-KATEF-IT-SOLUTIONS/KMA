@@ -1,7 +1,6 @@
 
 .main-home-left{
  padding: 10%;
- width: 500px;
  gap: 20px;
 
 }
@@ -11,6 +10,7 @@
 }
 .main-home-left p{
     margin-block:20px;
+    width: 40%;
     color: rgb(144, 148, 148);
 }
 .donate-contact button{
@@ -33,4 +33,14 @@
 }
 .donate-contact-no i{
     color:#19dd8e;
+}
+@media screen and (max-width:768px) {
+    .main-home-left h1{
+        font-size:2.5rem ;
+
+    }
+    .main-home-left p{
+    width: 100%;
+
+    }
 }

@@ -1,6 +1,5 @@
 .about-left{
     padding: 10%;
-    width: 500px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -18,4 +17,9 @@
 }
 .about-left > p{
     color: rgb(142, 142, 142);
+}
+@media screen and (max-width:768px){
+    .about-left > h2{
+        font-size: var(--section-heading2);
+    }
 }

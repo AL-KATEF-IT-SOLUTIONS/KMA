@@ -1,15 +1,21 @@
 .footer-bg{
     background-image: url(https://themewagon.github.io/charityworks/assets/img/gallery/footer_bg.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .footer-section{
     position: relative;
-    padding-inline: 15%;
+    padding-inline:50px;
     padding-block: 10%;
     color: white;
     display: flex;
-    gap: 30px;
+    gap: 70px;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
+
 }
 .footer-address ul{
     list-style-type: none;
@@ -62,6 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     color: rgb(143, 143, 143);
 
 }
@@ -69,10 +76,11 @@
 .copyright-details{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
     padding-inline: 50px;
     padding-block: 50px;
     width: 60%;
-    margin-block-start: -100px;
     border-top: 1px solid rgb(85, 85, 85);
 }
 
@@ -81,10 +89,4 @@
  color: inherit;
  font-size: 1rem;
  padding: 10px;
-}
-
-@media screen and (max-width:786px) {
-    .footer-section{
-        flex-wrap: wrap;
-    }    
 }

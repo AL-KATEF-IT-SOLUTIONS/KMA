@@ -63,7 +63,7 @@ main section:nth-child(4) {
 
 .progress-container {
     position: relative; /* Required for absolute positioning */
-    width: 350px; /* Adjust the width as needed */
+    width: 90%; /* Adjust the width as needed */
     height: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -104,5 +104,15 @@ main section:nth-child(4) {
     transform: translateY(-50%);
     right: 10px;
     color:green;
+  }
+  @media screen and (max-width:768px) {
+    main section:nth-child(4) {
+      padding: 25px;
+      padding-block: 50px;
+    }
+    .work-section h3{
+      font-size: var(--section-heading2);
+  }
+    
   }
   

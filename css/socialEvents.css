@@ -26,10 +26,11 @@
 .event-card{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
-    height: 200px;
-    width: 50%;
+    padding: 20px;
+
 }
 .event-card:hover {
     background-color:rgb(255, 255, 255);
@@ -45,5 +46,11 @@
 }
 .event-card-details{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+@media screen and (max-width:768px) {
+    .social-events-section h3{
+        font-size:var(--section-heading2);
+    }    
 }

@@ -6,7 +6,8 @@
     width: 100%;
     max-width: 1020px;
     padding: 40px 20px;
-    margin: auto;
+    margin-block:100px;
+    margin-inline:auto ;
 }
 
 .testim .arrow {
@@ -73,6 +74,16 @@
     -o-transition: all .5s ease-in-out;    
     transition: all .5s ease-in-out;
 		position: relative;
+}
+
+.testimonial-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.testimonial-box p {
+    line-height: 40px;
+
 }
 
 .testim .dots .dot.active,
@@ -569,6 +580,7 @@
 }
 
 @media all and (max-width: 500px) {
+
 	.testim .arrow {
 		font-size: 1.5em;
 	}
@@ -576,5 +588,24 @@
 	.testim .cont div p {
 		line-height: 25px;
 	}
+    .testim .arrow.left {
+        left: 20px;
+    }
+    
+    .testim .arrow.right {
+        right: 20px;
+    }
 
+}
+@media screen and (max-width:1100px) {
+    .testim .wrap {
+        padding: 40px 0px;
+    }    
+}
+@media screen and (max-width:768px) {
+    .testim .wrap {
+        margin-block:50px;
+
+    }
+    
 }

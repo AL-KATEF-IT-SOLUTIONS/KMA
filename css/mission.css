@@ -28,6 +28,8 @@ main section:nth-child(2) {
 .all-mission-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-block-start: 50px;
     gap: 30px;
 }
@@ -85,4 +87,12 @@ main section:nth-child(2) {
 
   .mission-box:hover::before {
     height: 100%;
+  }
+  @media screen and (max-width:768px) {
+    main section:nth-child(2) {
+      padding-block: 50px;
+    }
+    .mission-section h3{
+      font-size: var(--section-heading2);
+  }    
   }

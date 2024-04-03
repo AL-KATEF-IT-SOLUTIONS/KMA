@@ -4,6 +4,12 @@
     margin:0;
     padding: 0;
 }
+:root{
+    --section-heading:2.5rem;
+    /* 768px */
+    --section-heading2:1.4rem
+
+}
 
 nav{
  font-family: "Mulish", sans-serif;

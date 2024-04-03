@@ -24,6 +24,7 @@ nav{
     border: 0;
     color: white;
 }
+
 .menu-button {
     color: #33df9a;
     background-color: #33df9a00;
@@ -54,6 +55,13 @@ nav{
     }
     .menu-button {
         display: block;
+    }
+    #menu-list button{
+        margin-block-end: 20px;
+
+    }
+    .menu-home-li{
+        margin-block-start: 20px;
     }
 
     
