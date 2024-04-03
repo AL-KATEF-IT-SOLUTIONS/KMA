@@ -136,6 +136,7 @@ main section:nth-child(6) {
         font-size: 2rem;
         color: white;
         line-height: 50px;
+        width: 50%;
     }
     .aim-box button{
         padding-inline: 50px;
@@ -158,6 +159,9 @@ main section:nth-child(6) {
 
         .aim-section{
             margin-block: 50px;
+            }
+            .aim-box h1{
+                width: 100%;
             }
     }
 
