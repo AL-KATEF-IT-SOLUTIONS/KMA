@@ -15,6 +15,16 @@
 .form-section {
     width: 60%;
 }
+textarea {
+    padding: 30px; /* Adjust the padding value as needed */
+  }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  text-indent: 15px; /* Adjust the margin value as needed */
+}
+
 .address-section{
     width: 40%;
     display: flex;
@@ -40,10 +50,10 @@
     border: 1px solid rgb(216, 216, 216);
 }
 .form-section form ::placeholder{
- padding-inline-start: 30px;
+ padding-inline-start: 15px;
 }
 .form-section form textarea::placeholder{
-padding:30px ;
+padding:5px ;
 }
 .subject{
     width: 100%!important;

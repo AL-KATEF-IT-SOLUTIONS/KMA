@@ -94,11 +94,8 @@
 @media screen and (max-width:768px) {
 
     .footer-section{
-
         gap: 40px;
-
     }
-
     .footer-logo h1{
         font-size: 1.8rem;
     }
@@ -110,6 +107,5 @@
     }
     .footer-newsletter p{
         line-height: 30px;
-    
     }
 }
