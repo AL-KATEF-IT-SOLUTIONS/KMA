@@ -1,0 +1,82 @@
+.contact-heading h1{
+    text-align: center;
+    font-size:3rem;
+    font-weight: 700;
+    margin-block-start: 100px;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    margin-block-start: 100px;
+    margin-inline: 10%;
+    margin-block-end: 100px;    
+    gap: 100px;
+}
+.form-section {
+    width: 60%;
+}
+.address-section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.address-section i {
+    font-size: 2rem;
+}
+.address{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+.form-section form textarea{
+    margin-block-end: 30px;
+    width: 100%;
+    border: 1px solid rgb(216, 216, 216);
+}
+.form-section form input{
+    width: 48%;
+    height: 50px;
+    border: 1px solid rgb(216, 216, 216);
+}
+.form-section form ::placeholder{
+ padding-inline-start: 30px;
+}
+.form-section form textarea::placeholder{
+padding:30px ;
+}
+.subject{
+    width: 100%!important;
+}
+form button{
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid  #33df9a;
+    color: #33df9a;
+}
+@media screen and (max-width:991px) {
+    .contact-section{
+        flex-direction: column;
+    }
+    .form-section {
+        width: 100%;
+    }
+    .form-section form input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgb(216, 216, 216);
+    }
+    .address-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+       
+    }
+    .address-section{
+         font-size: .8rem;       
+    }
+
+    
+}

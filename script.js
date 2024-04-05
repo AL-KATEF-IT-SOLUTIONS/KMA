@@ -10,11 +10,6 @@ function toggleMenu(){
     }
 }
 
-
-
-
-
-
 // vars
 'use strict'
 var	testim = document.getElementById("testim"),
