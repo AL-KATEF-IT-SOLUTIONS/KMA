@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding-inline: 30px;
+    margin-block-start: 100px;
 }
 .main-home-left{
  padding-block: 10%;

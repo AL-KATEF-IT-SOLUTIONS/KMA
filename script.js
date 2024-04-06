@@ -1,3 +1,21 @@
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('hidden');
+    } else {
+        // Scrolling up
+        navbar.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop;
+});
+
+// menu //////////////
+
 let menuList = document.getElementById("menu-list")
 menuList.style.maxHeight="0px";
 
@@ -119,3 +137,23 @@ window.onload = function() {
 			
 		})
 }
+
+
+// back top icon /////////////////////
+
+window.addEventListener('scroll', function() {
+    var backToTopButton = document.getElementById('back-top');
+    if (window.pageYOffset > 500) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+document.getElementById('back-top').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll behavior
+    });
+});

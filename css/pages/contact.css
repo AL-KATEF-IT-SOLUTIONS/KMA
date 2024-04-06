@@ -2,12 +2,29 @@
     text-align: center;
     font-size:3rem;
     font-weight: 700;
+    margin-block-start: 150px;
+}
+.google-map{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
     margin-block-start: 100px;
+}
+.google-map iframe{
+    width: 60%!important;
+}
+.get-in-touch{
+    margin-inline: 10%;
+    margin-block-start: 100px;
+    margin-block-end: 30px; 
+    font-size: 1.8rem;   
+
+
+
 }
 .contact-section{
     display: flex;
     justify-content: center;
-    margin-block-start: 100px;
     margin-inline: 10%;
     margin-block-end: 100px;    
     gap: 100px;
@@ -15,9 +32,6 @@
 .form-section {
     width: 60%;
 }
-textarea {
-    padding: 30px; /* Adjust the padding value as needed */
-  }
 
 input[type="text"],
 input[type="password"],
@@ -39,6 +53,9 @@ input[type="email"] {
     align-items: start;
     gap: 30px;
 }
+.address > div > i {
+    color: rgb(107, 107, 107);
+}
 .form-section form textarea{
     margin-block-end: 30px;
     width: 100%;
@@ -53,7 +70,7 @@ input[type="email"] {
  padding-inline-start: 15px;
 }
 .form-section form textarea::placeholder{
-padding:5px ;
+padding:15px ;
 }
 .subject{
     width: 100%!important;
@@ -65,7 +82,24 @@ form button{
     border: 1px solid  #33df9a;
     color: #33df9a;
 }
+.name-email{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 30px;
+
+}
 @media screen and (max-width:991px) {
+    .get-in-touch {
+        font-size: 1.5rem;
+        margin-block-end: 30px;
+    }
+    .google-map{
+        margin-block-start: 30px;
+    }
+    .google-map iframe{
+        width: 90%!important;
+    }
     .contact-section{
         flex-direction: column;
     }
@@ -86,6 +120,9 @@ form button{
     }
     .address-section{
          font-size: .8rem;       
+    }
+    .name-email{
+        gap: 30px;
     }
 
     

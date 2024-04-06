@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="navbar">
       <div class="logo-heading">
         <h1>Charity.</h1>
       </div>
@@ -43,7 +43,14 @@
       <div class="contact-heading">
         <h1>Contact Us</h1>
       </div>
+
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.042452427981!2d75.7921634758947!3d11.25828745011923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba659c657e3fca3%3A0x110850e80e8cf898!2sAL%20KATEF%20IT%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1712379351104!5m2!1sen!2sin" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <h2 class="get-in-touch">Get In Touch</h2>
+
       <div class="contact-section">
+
         <div class="form-section">
           <form action="">
             <textarea
@@ -52,15 +59,16 @@
               placeholder="Enter Message"
               rows="15"
             ></textarea>
-            <br />
+            <div class="name-email">
             <input
               type="text"
               placeholder="Enter Your Nme"
               name=""
               id=""
-            />&nbsp; &nbsp;
+            />
             <input type="email" placeholder="Enter Email" name="" id="" />
-            <br /><br /><br />
+          </div>
+
             <input
               type="text"
               class="subject"
