@@ -27,6 +27,12 @@ function toggleMenu(){
         menuList.style.maxHeight="0px"
     }
 }
+document.body.addEventListener('click', function(event) {
+    // Check if the clicked element is not part of the menu list
+    if (!menuList.contains(event.target)) {
+        menuList.style.maxHeight = "0px";
+    }
+});
 
 // vars
 'use strict'

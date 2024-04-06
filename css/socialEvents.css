@@ -53,4 +53,16 @@
     .social-events-section h3{
         font-size:var(--section-heading2);
     }    
+
+    .event-card{
+        gap: 20px;
+    }
+    .event-card-content{
+        gap: 20px;
+    }
+    .event-card-details{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
