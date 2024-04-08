@@ -33,7 +33,7 @@ document.body.addEventListener('click', function(event) {
         menuList.style.maxHeight = "0px";
     }
 });
-
+// /////////////// testimonials/////////////////
 // vars
 'use strict'
 var	testim = document.getElementById("testim"),
@@ -142,6 +142,36 @@ window.onload = function() {
 				}
 			
 		})
+
+ 
+            startCountAnimation('donation1', 6200, 100); // Adjust the duration as needed
+            startCountAnimation('donation2', 80, 100); // Adjust the duration as needed
+            startCountAnimation('donation3', 256, 100); // Adjust the duration as needed
+            startCountAnimation('donation4', 620, 100); // Adjust the duration as needed
+
+}
+  
+// donation numbers increasing/////////////
+
+
+function startCountAnimation(targetId, finalValue, duration) {
+    let start = 0;
+    const increment = finalValue / duration;
+    const targetElement = document.getElementById(targetId);
+
+    const interval = setInterval(function() {
+        start += increment;
+        targetElement.innerHTML = numberWithCommas(Math.ceil(start)) + '<span class="plus-icon">+</span>';
+
+        if (start >= finalValue) {
+            clearInterval(interval);
+            targetElement.innerHTML = numberWithCommas(finalValue) + '<span class="plus-icon">+</span>';
+        }
+    }, 1000 / 60); // Adjust the interval for smoother animation
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 
@@ -163,3 +193,5 @@ document.getElementById('back-top').addEventListener('click', function(event) {
         behavior: 'smooth' // Smooth scroll behavior
     });
 });
+
+
