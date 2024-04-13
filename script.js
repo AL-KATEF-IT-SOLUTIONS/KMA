@@ -14,28 +14,29 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
-// menu //////////////
+//////////////// menu /////////////////////////////
 
-let menuList = document.getElementById("menu-list")
-menuList.style.maxHeight="0px";
 
-function toggleMenu(){
-    if(menuList.style.maxHeight=="0px"){
-        menuList.style.maxHeight="600px"
-    }
-    else{
-        menuList.style.maxHeight="0px"
+let menuList = document.getElementById("menu-list");
+
+function toggleMenu() {
+    if (menuList.style.maxHeight === "0px") {
+        menuList.style.maxHeight = "600px";
+    } else {
+        menuList.style.maxHeight = "0px";
     }
 }
+
 document.body.addEventListener('click', function(event) {
-    // Check if the clicked element is not part of the menu list
-    if (!menuList.contains(event.target)) {
+    // Check if the clicked element is not part of the menu button or menu list
+    if (!event.target.closest(".menu-button") && !event.target.closest("#menu-list")) {
         menuList.style.maxHeight = "0px";
     }
 });
-// /////////////// testimonials/////////////////
+
+
+ /////////////// testimonials/////////////////
 // vars
-'use strict'
 var	testim = document.getElementById("testim"),
 		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
@@ -143,11 +144,22 @@ window.onload = function() {
 			
 		})
 
- 
-            startCountAnimation('donation1', 6200, 100); // Adjust the duration as needed
-            startCountAnimation('donation2', 80, 100); // Adjust the duration as needed
-            startCountAnimation('donation3', 256, 100); // Adjust the duration as needed
-            startCountAnimation('donation4', 620, 100); // Adjust the duration as needed
+
+            let animationStarted = false;
+
+window.addEventListener('scroll', function() {
+    // Adjust this value to the scroll position where you want to start the animation
+    const scrollTriggerValue = 5750; 
+
+    // Check if the scroll position is greater than or equal to the trigger value and the animation hasn't started yet
+    if (window.scrollY >= scrollTriggerValue && !animationStarted) {
+        startCountAnimation('donation1', 6200, 100); 
+        startCountAnimation('donation2', 80, 100); 
+        startCountAnimation('donation3', 256, 100); 
+        startCountAnimation('donation4', 620, 100); 
+        animationStarted = true; // Set animationStarted to true to prevent re-triggering the animation
+    }
+});
 
 }
   
